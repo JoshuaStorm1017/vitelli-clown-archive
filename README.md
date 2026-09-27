@@ -1,2 +1,3 @@
-# vitelli-clown-archive
-Public joke parody gallery: VITELLI CLOWN ARCHIVE
+# VITELLI CLOWN ARCHIVE
+
+Parody joke gallery for Josh. Live: https://vitelli-clown-archive.vercel.app
