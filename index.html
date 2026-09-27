@@ -1,1 +1,111 @@
-<!DOCTYPE html><html><head><title>VITELLI CLOWN ARCHIVE</title></head><body><h1>updating...</h1></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VITELLI CLOWN ARCHIVE — AI Takeover</title>
+  <meta name="description" content="Parody joke gallery: Grok Imagine recreations of @vitelli_3 as a circus clown. Not affiliated." />
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root { --bg:#0a0a0b; --panel:#141416; --line:#2a2a2e; --text:#f4f0ea; --muted:#9a9590; --accent:#ff3b5c; --gold:#ffc857; --teal:#2ee6a6; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "Space Grotesk", system-ui, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh;
+      background-image: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(255,59,92,.18), transparent), radial-gradient(ellipse 60% 40% at 100% 100%, rgba(46,230,166,.08), transparent); }
+    .wrap { max-width: 935px; margin: 0 auto; padding: 0 16px 80px; }
+    .banner { border-bottom: 1px solid var(--line); background: linear-gradient(90deg, #1a0508, #0a0a0b 40%, #051a14); padding: 10px 16px; text-align: center; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--gold); }
+    .banner strong { color: var(--accent); }
+    header.profile { display: grid; grid-template-columns: 150px 1fr; gap: 28px; padding: 36px 0 28px; align-items: center; border-bottom: 1px solid var(--line); }
+    @media (max-width: 640px) { header.profile { grid-template-columns: 90px 1fr; gap: 16px; padding: 24px 0 20px; } }
+    .avatar-ring { width: 150px; height: 150px; border-radius: 50%; padding: 3px; background: conic-gradient(from 210deg, var(--accent), var(--gold), var(--teal), var(--accent)); flex-shrink: 0; }
+    @media (max-width: 640px) { .avatar-ring { width: 90px; height: 90px; } }
+    .avatar-ring img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; border: 4px solid var(--bg); display: block; }
+    .meta h1 { font-size: 28px; font-weight: 400; letter-spacing: -.02em; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .badge { font-size: 11px; font-weight: 600; letter-spacing: .06em; background: var(--accent); color: white; padding: 4px 8px; border-radius: 4px; text-transform: uppercase; }
+    .stats { display: flex; gap: 28px; margin: 18px 0 14px; font-size: 15px; }
+    .stats b { font-weight: 600; } .stats span { color: var(--muted); }
+    .bio { font-size: 14px; line-height: 1.5; max-width: 420px; }
+    .bio .name { font-weight: 600; } .bio a { color: var(--teal); text-decoration: none; } .bio .muted { color: var(--muted); }
+    .tabs { display: flex; justify-content: center; gap: 48px; border-bottom: 1px solid var(--line); }
+    .tab { padding: 14px 0; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); border-top: 1px solid transparent; margin-top: -1px; }
+    .tab.active { color: var(--text); border-top-color: var(--text); font-weight: 600; }
+    .title-strip { text-align: center; padding: 40px 10px 28px; }
+    .title-strip h2 { font-family: "Instrument Serif", Georgia, serif; font-size: clamp(32px, 6vw, 56px); font-weight: 400; letter-spacing: -.02em; line-height: 1.05; }
+    .title-strip h2 em { color: var(--accent); font-style: italic; }
+    .title-strip p { margin-top: 12px; color: var(--muted); font-size: 14px; max-width: 520px; margin-left: auto; margin-right: auto; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; }
+    @media (max-width: 640px) { .grid { gap: 2px; } }
+    .cell { position: relative; aspect-ratio: 1; background: var(--panel); overflow: hidden; cursor: zoom-in; border: none; padding: 0; }
+    .cell img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .35s ease, filter .35s ease; }
+    .cell:hover img { transform: scale(1.04); filter: brightness(.72); }
+    .cell .hover { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity .25s; color: white; font-weight: 600; font-size: 14px; pointer-events: none; }
+    .cell:hover .hover { opacity: 1; }
+    .lb { position: fixed; inset: 0; background: rgba(0,0,0,.92); display: none; align-items: center; justify-content: center; z-index: 50; padding: 24px; cursor: zoom-out; }
+    .lb.open { display: flex; }
+    .lb img { max-width: min(920px, 100%); max-height: 90vh; border-radius: 4px; }
+    .lb .cap { position: absolute; bottom: 28px; left: 0; right: 0; text-align: center; color: var(--muted); font-size: 13px; }
+    footer { margin-top: 56px; padding: 28px 16px; border-top: 1px solid var(--line); text-align: center; color: var(--muted); font-size: 12px; line-height: 1.7; }
+    footer .joke { color: var(--gold); font-size: 13px; margin-bottom: 8px; }
+  </style>
+</head>
+<body>
+  <div class="banner">⚠ <strong>AI TAKEOVER</strong> · parody joke site · not real · not affiliated with Instagram or @vitelli_3</div>
+  <div class="wrap">
+    <header class="profile">
+      <div class="avatar-ring"><img src="gallery/02-ig-avatar-clown.svg" alt="@vitelli_3 clown avatar" /></div>
+      <div class="meta">
+        <h1>vitelli_3 <span class="badge">Clownified</span></h1>
+        <div class="stats">
+          <div><b id="count">6</b> <span>posts</span></div>
+          <div><b>268</b> <span>followers*</span></div>
+          <div><b>∞</b> <span>honks</span></div>
+        </div>
+        <div class="bio">
+          <div class="name">Matthew Vitelli · Circus Edition</div>
+          <div>Grok Imagine recreations of public profile vibes.</div>
+          <div class="muted">Same face energy. Red nose. Big top destiny.</div>
+          <div><a href="https://www.instagram.com/vitelli_3/" target="_blank" rel="noopener">instagram.com/vitelli_3</a> → gone clown</div>
+        </div>
+      </div>
+    </header>
+    <div class="tabs"><div class="tab active">▦ Posts</div><div class="tab">☆ Saved*</div><div class="tab">☺ Tagged*</div></div>
+    <div class="title-strip">
+      <h2>VITELLI <em>CLOWN</em> ARCHIVE</h2>
+      <p>Every frame is an AI circus-clown recreation derived from Matthew’s public profile look. Made for Josh. Pure joke energy.</p>
+    </div>
+    <div class="grid" id="grid"></div>
+    <footer>
+      <div class="joke">🤡 If you’re Matthew: this is a friendly roast, not a lawsuit. Honk if you agree.</div>
+      <div>Public Instagram profile inspiration only (@vitelli_3). AI-generated clown parody.</div>
+      <div>No private data. No DMs. No doxxing. Built as a joke for Josh · ET</div>
+    </footer>
+  </div>
+  <div class="lb" id="lb" role="dialog" aria-modal="true"><img id="lbimg" alt="" /><div class="cap" id="lbcap"></div></div>
+  <script>
+    const posts = [
+      { src: "gallery/01-hero-clown.svg", likes: "1,024", cap: "Hero clown · Grok Imagine" },
+      { src: "gallery/02-ig-avatar-clown.svg", likes: "890", cap: "IG avatar protocol" },
+      { src: "gallery/03-vintage-poster.svg", likes: "2,001", cap: "NOW APPEARING" },
+      { src: "gallery/05-before-after.svg", likes: "3,333", cap: "Before → After" },
+      { src: "gallery/06-ai-takeover.svg", likes: "999", cap: "AI takeover complete" },
+      { src: "gallery/08-honk-closeup.svg", likes: "5,000", cap: "HONK" }
+    ];
+    document.getElementById("count").textContent = posts.length;
+    const grid = document.getElementById("grid");
+    const lb = document.getElementById("lb");
+    const lbimg = document.getElementById("lbimg");
+    const lbcap = document.getElementById("lbcap");
+    posts.forEach((p) => {
+      const btn = document.createElement("button");
+      btn.className = "cell"; btn.type = "button";
+      btn.innerHTML = `<img src="${p.src}" alt="${p.cap}" loading="lazy" /><div class="hover">♥ ${p.likes}</div>`;
+      btn.addEventListener("click", () => { lbimg.src = p.src; lbimg.alt = p.cap; lbcap.textContent = p.cap; lb.classList.add("open"); });
+      grid.appendChild(btn);
+    });
+    lb.addEventListener("click", () => lb.classList.remove("open"));
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape") lb.classList.remove("open"); });
+  </script>
+</body>
+</html>
